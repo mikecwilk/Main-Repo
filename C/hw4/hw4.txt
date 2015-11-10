@@ -1,0 +1,60 @@
+HW4
+
+This assignment generates a 2d array fill with [rows][columns] of students it evaluates the highest scoring student, the toughest homework, and the highest score and number of times it appears, and prints out the 
+functions it used to generate these answers.
+
+To run this in a terminal (using the gcc compiler):
+
+	- place both hw4.c and hw4_test.c in your working directory
+	
+	- type: gcc -o hw4 hw4.c hw4_test.c and press enter
+	
+	- type: ./hw4 (must adjust rows and columns in both file hw4.c (rows 12 and 13) and file test_hw4.c(rows 11 12))
+	
+	Examples: Changing ROW = 30 and COL = 10
+					
+	          col col col col col col col col col col
+		row = 0  84  29  64  74  66  53  49  41  2  60
+		row = 1  38  23  21  47  58  3  29  89  81  70
+		row = 2  16  7  14  59  62  64  2  63  67  30
+		row = 3  80  29  7  40  93  100  21  14  73  46
+		row = 4  15  68  36  79  90  61  66  72  27  24
+		row = 5  33  84  98  10  50  80  42  21  43  46
+		row = 6  41  30  19  33  30  26  65  28  70  56
+		row = 7  53  89  57  49  45  76  47  60  15  68
+		row = 8  75  87  9  30  86  33  88  67  72  62
+		row = 9  2  31  13  15  20  22  10  23  43  0
+		row = 10  22  4  9  11  43  13  100  82  40  4
+		row = 11  92  41  29  22  74  77  23  7  83  27
+		row = 12  42  60  27  46  92  34  100  95  78  72
+		row = 13  100  45  39  20  6  45  6  55  75  22
+		row = 14  98  16  5  29  81  26  74  98  94  26
+		row = 15  19  75  10  84  55  48  16  45  1  8
+		row = 16  6  58  15  28  19  71  59  68  77  26
+		row = 17  79  22  31  63  59  7  34  68  93  65
+		row = 18  18  51  61  18  30  30  66  47  27  64
+		row = 19  86  0  67  20  72  34  4  59  3  60
+		row = 20  1  92  15  9  97  42  34  62  73  17
+		row = 21  19  17  34  41  87  44  6  19  2  36
+		row = 22  65  48  2  44  95  30  2  26  4  100
+		row = 23  13  8  66  89  36  61  24  78  15  46
+		row = 24  27  27  100  99  86  8  71  9  40  4
+		row = 25  56  17  14  61  31  57  71  15  80  17
+		row = 26  29  39  99  44  2  15  20  45  28  37
+		row = 27  3  71  32  2  77  90  72  3  72  29
+		row = 28  66  94  48  22  75  14  79  94  84  59
+		row = 29  39  93  39  40  82  79  22  54  44  3
+		
+		Highest student = 12
+
+		The toughest homework = 2
+
+		The highest score 100 appears 6 times
+
+		Ran the programs :
+
+		PrintArray
+		Top Student
+		Toughest Homework
+		NumHighest
+

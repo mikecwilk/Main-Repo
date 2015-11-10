@@ -8,8 +8,8 @@ Homework 4
 				
 #include <stdio.h>
 #include <stdlib.h>
-#define NROW 100
-#define NCOL 20
+#define NROW 10
+#define NCOL 10
 
 int PrintArray();
 int TopStudent();
