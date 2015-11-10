@@ -1,0 +1,31 @@
+HW2
+
+This assignment generates a "hexboard" with the number of rows and columns dependent on user input
+
+To run this in a terminal (using the gcc compiler):
+
+	- place both hw2.c and hw2_test.c in your working directory
+	
+	- type: gcc -o hw2 hw2.c hw2_test.c and press enter
+	
+	- type: ./hw2 <num1> <num2> (where <num1> and <num2> are two numbers that represent rows and columns of a hexboard)
+	
+	Examples:
+	
+	./hw2 2 3
+	 / \ / \ / \
+	|   |   |   |
+	 \ / \ / \ / \
+	  |   |   |   |
+	   \ / \ / \ /
+	   
+	./hw2 3 2
+	 / \ / \
+	|   |   |
+	 \ / \ / \
+	  |   |   |
+	   \ / \ / \
+	    |   |   |
+	     \ / \ /
+
+	
