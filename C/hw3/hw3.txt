@@ -1,0 +1,24 @@
+HW3
+
+This assignment tells the minimum and maximum values for primitives in the C programming language
+
+To run this in a terminal (using the gcc compiler):
+
+	- place both hw3.c and hw3_test.c in your working directory
+	
+	- type: gcc -o hw3 hw3.c hw3_test.c and press enter
+	
+	- type: ./hw3 <0/1> <0/1> <c/s/d/l/z>(where the first arg is for signed or unsigned, the second arg is for minimum or maximum and the third arg is the primitive type)
+	
+	Examples:
+		./hw3 0 0 d
+		output: 0
+		
+		./hw3 1 0 d
+		Output: -2147483648
+
+		./hw3 0 1 d 
+		Output: 4294967295
+
+		./hw3 1 1 d
+		Output: 2147483647
