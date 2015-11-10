@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang = "en-us">
+	<head>
+	<title>Table house</title>
+	<style>
+	
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	th, td {
+		padding: 15px;
+	}
+	</style>
+	<script>
+		var firstName = "";
+		var yearBorn = "";
+		var answer = "";
+		var table = "";
+	
+		function runProgram(){
+		//Input 
+		firstName = document.getElementById('fName').value;
+		yearBorn = document.getElementById('yBorn').value;
+		//Processing
+		age = (2015 - yearBorn);
+		answer = "Hello " + firstName + " you are " + age + " years old";
+		table += "<table>";
+		for (var i = 0; i < 5; i++){
+			table += "<tr>";
+			for (var j = 0; j < 5; j++){
+			
+			var number = Math.floor(Math.random() * 10);
+			
+				if (j % 2 == 1){
+					if (number !== 5){
+						table += "<td bgcolor = \"yellow\">"+ number +"</td>"
+					}else{
+						table += "<td bgcolor = \"yellow\">five</td>"
+					}
+				}else if(j % 2 == 0){
+					table += "<td>";
+				if (number !== 5){
+					table += number;
+				}else{
+					table += "five"
+				}
+				table += "</td>";
+				}
+			}
+		table += "</tr>";
+		}
+		table += "</table>";
+		//Output
+		document.getElementById('byOutput').innerHTML = table;
+		document.getElementById('myOutput').innerHTML = answer;
+
+		
+		
+		}
+		
+	</script>
+	<!--Input-->
+	What is your first name? <input type = "text" id="fName"></input>
+	<br>
+	What year were you born? <input type = "text" id="yBorn"></input>
+	<br>
+	<!--Output-->
+	 <span id="byOutput">innerHTML</span>
+	<br>
+	Your full name is: <span id="myOutput">innerHTML</span>
+	<br>
+			   
+	<br>
+	<button type="button" onclick="runProgram()">Run Program</button>
+	<br>
+	
