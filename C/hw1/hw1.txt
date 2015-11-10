@@ -1,0 +1,12 @@
+HW1
+
+This assignment simply gets the greatest common denominator of two variable
+
+To run this in a terminal (using the gcc compiler):
+
+	- place both hw1.c and hw1_test.c in your working directory
+	
+	- type: gcc -o hw1 hw1.c hw1_test.c and press enter
+	
+	- type: ./hw1 <num1> <num2> (where <num1> and <num2> are two numbers you wish to find the gcd of)
+
