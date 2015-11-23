@@ -1,0 +1,23 @@
+This is a simple python gui that can add files or remove them to two specified dump locations. 
+
+The first window is a login screen:
+
+	-You are at liberty to enter any Username you want (this will be the name of the files created)
+
+	-The login password is simply hardcoded to "login"
+
+The next window has six buttons:
+
+	-Fill will create files in the selected dump location (dump1 is hardcoded to C:\cygwin\home\wilkm\Scripts\python\dump1\ and
+	dump2 is hardcoded to C:\cygwin\home\wilkm\Scripts\python\dump2\) The files are created by using a for loop and appending a 
+	number to the end of the end of your chosen Username per loop.
+
+	-Clear will clear the files you made with the given Username in the same fashion.
+
+	-Username? will give set the string "Command:" at the bottom of the window to display the chosen Username.
+
+	-Exit closes the program
+
+	-dump1 sets the path for fills and clears to C:\cygwin\home\wilkm\Scripts\python\dump1\
+
+	-dump2 sets the path for fills and clears to C:\cygwin\home\wilkm\Scripts\python\dump2\
