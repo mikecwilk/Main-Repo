@@ -1,0 +1,97 @@
+To Compile: 
+
+With the files p3.java BST.java and Node.java in the working directory 
+
+Type in the command line -> javac p3.java BST.java Node.java 
+
+To Run:
+
+(For this example I will use p3.data2 as the input file)
+
+Type in the command line - > java p3 < p3.data2
+
+Now several things will happen:
+
+1) The files first line will be read as a single string into the program 
+
+2) The string is separated into single strings of each word separated by whitespace (names in this case)
+   and placed in an array  
+
+3) Then a for loop executes for the length of this array or until it sees the word "null". For 
+   each iteration of the loop a node is created in the binary search tree using the bst_insert method
+
+4) Then a check is done for the word right after the word null. Due to the definition of this assignment 
+   that will be either an "s" or a "d" this will tell the program what to do next.
+
+5) If an "s" is found the bst_search method is ran that looks at the next word in the array. Again this
+   relies on the assignment definition but the next word is the name that this method searches for. If 
+   the name is found in the binary search tree it returns its original ID number otherwise 0;      			 
+
+6) If an "d" is found the bst_delete method is ran that looks at the next word in the array. Again this
+   relies on the assignment definition but the next word is the name that this method Deletes for. If 
+   the name is not found in the tree then it prints the string "Not found" 
+
+7) After this it will execute the InOrderTraverseTree function recursively which prints out the binary 
+   search in the following order:
+   <leftNode> <rootNode> <rightNode>
+   This prints out the tree in alphabetical order
+
+8) Then the program will execute the PreOrderTraverseTree function recursively which prints out the
+   binary search tree in the following order:
+   <rootNode> <leftNode> <rightNode>  
+
+9) Additional functionality has been added for the extra credit portion of this assignment. It will
+   now deal with duplicate names by placing them in arrayLists at each node. This means each node 
+   will have an arrayList but most will simply hold an individual name and ID unless a duplicate is
+   found
+
+EXAMPLE RUN (searching for a name that has duplicates):
+
+$ java p3 < p3.data1
+Reading...
+Read from file: Mark chris SIMON Bryan Jon Thomas David Arturo TONY Tony Jon shane Gus NULL S Jon
+Splitting...
+
+Searching for: Jon
+traversing path: Mark
+traversing path: chris
+Jon was found!
+Jon has ID 5
+Jon has ID 11
+
+
+In Order Traverse BST
+
+Arturo has ID 8
+Bryan has ID 4
+chris has ID 2
+David has ID 7
+Gus has ID 13
+Jon has ID 5
+Jon has ID 11
+Mark has ID 1
+shane has ID 12
+SIMON has ID 3
+Thomas has ID 6
+TONY has ID 9
+Tony has ID 10
+
+
+Pre Order Traverse BST
+
+Mark has ID 1
+chris has ID 2
+Bryan has ID 4
+Arturo has ID 8
+Jon has ID 5
+Jon has ID 11
+David has ID 7
+Gus has ID 13
+SIMON has ID 3
+shane has ID 12
+Thomas has ID 6
+TONY has ID 9
+Tony has ID 10
+
+
+ 
