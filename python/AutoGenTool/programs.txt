@@ -1,0 +1,2 @@
+Program_Name	Script_Directory	Data_Directory	Database_Directory
+AsiaSat9	C:\eclipse_python\AutoGenTool\TestOutput	C:\eclipse_python\AutoGenTool\TestInData\	C:\eclipse_python\AutoGenTool\AsiaSat9\
