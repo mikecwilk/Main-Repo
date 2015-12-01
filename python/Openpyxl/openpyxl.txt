@@ -1,0 +1,42 @@
+How to get openpyxl working!
+
+1) Download Openpyxl from:
+
+	https://pypi.python.org/pypi/openpyxl
+	(located at the bottom of the page file is called openpyxl-2.3.1.tar.gz)
+
+2) Navigate to where the file is downloaded and extract it. This will result in a folder called "dist"
+
+		
+
+3) Move this folder into your python/33/Lib location (in my case C:\Python33\Lib)
+
+4) Now open this folder and there will be a file named "openpyxl-2.3.1.tar" Again you must extract this file here using 7zip. 
+
+5) Navigate to the following directory:
+	
+	C:\Python33\Lib\dist\openpyxl-2.3.1
+	And run the following command "python -i setup.py" 
+
+6) This will complete the install for openpyxl
+
+*** Example Code *** 
+
+from openpyxl import Workbook
+wb = Workbook()
+
+# grab the active worksheet
+ws = wb.active
+
+# Data can be assigned directly to cells
+ws['A1'] = 42
+
+# Rows can also be appended
+ws.append([1, 2, 3])
+
+# Python types will automatically be converted
+import datetime
+ws['A2'] = datetime.datetime.now()
+
+# Save the file
+wb.save("Michael_Wilk.xlsx")
